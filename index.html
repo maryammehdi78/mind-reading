@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+  <meta charset="UTF-8" /> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+  <title>Mind Reader</title> 
+
+  <style> 
+
+    body { 
+
+      background: linear-gradient(135deg, #ffd6ff, #ffe5ec); 
+
+      color: #4b0082; 
+
+      font-family: 'Comic Sans MS', cursive, sans-serif; 
+
+      text-align: center; 
+
+      padding: 80px 20px; 
+
+    } 
+
+  
+
+    h1 { 
+
+      font-size: 42px; 
+
+      margin-bottom: 10px; 
+
+    } 
+
+  
+
+    p { 
+
+      font-size: 20px; 
+
+      margin-bottom: 30px; 
+
+    } 
+
+  
+
+    input { 
+
+      padding: 12px; 
+
+      font-size: 22px; 
+
+      width: 150px; 
+
+      text-align: center; 
+
+      border: 3px dashed #ff69b4; 
+
+      border-radius: 15px; 
+
+      background-color: #fff0f5; 
+
+      color: #c71585; 
+
+    } 
+
+  
+
+    button { 
+
+      margin-top: 25px; 
+
+      padding: 14px 28px; 
+
+      font-size: 22px; 
+
+      background-color: #ff69b4; 
+
+      color: white; 
+
+      border: none; 
+
+      border-radius: 15px; 
+
+      cursor: pointer; 
+
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+
+      transition: all 0.2s ease; 
+
+    } 
+
+  
+
+    button:hover { 
+
+      background-color: #ff1493; 
+
+      transform: scale(1.05); 
+
+    } 
+
+  
+
+    #result { 
+
+      margin-top: 40px; 
+
+      font-size: 28px; 
+
+      font-weight: bold; 
+
+      color: #ff4500; 
+
+      animation: popIn 0.5s ease; 
+
+    } 
+
+  
+
+    @keyframes popIn { 
+
+      0% { transform: scale(0.8); opacity: 0; } 
+
+      100% { transform: scale(1); opacity: 1; } 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body> 
+
+  <h1> divaaaa</h1> 
+
+  <p>Give me a number and I'll tell you what you are thinking of </p> 
+
+  <input type="number" id="userNumber" placeholder="Your lucky number" /> 
+
+  <br /> 
+
+  <button onclick="readMind()">Read My Mind!</button> 
+
+  <div id="result"></div> 
+
+  
+
+  <script> 
+
+    function readMind() { 
+
+      const userInput = document.getElementById('userNumber').value; 
+
+      const resultDiv = document.getElementById('result'); 
+
+  
+
+      if (userInput === "") { 
+
+        resultDiv.textContent = " Whoops! I can't read air. Give me something juicy!"; 
+
+      } else { 
+
+        resultDiv.textContent = `hard but you're probably thinking of ${userInput}! wheres my american got talent `; 
+
+      } 
+
+    } 
+
+  </script> 
+
+</body> 
+
+</html> 
+
+ 
